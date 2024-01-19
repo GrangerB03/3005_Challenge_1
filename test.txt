@@ -1,0 +1,40 @@
+Employees (EID, Name, Age) = {
+E1, John, 32
+E2, Alice, 28
+E3, Bob, 29
+}
+
+Managers (MID, EID, Name, Age) = {
+M1, E1, John, 32
+M2, E2, Kelly, 45
+M3, E3, Bob, 29
+M4, E4, Rachel, 34
+}
+
+Test (Value, id) = {
+test, 21
+test2, -1
+}
+
+Students (SID, Name, Age, CGPA) = {
+1, Billy, 21, 10.0
+2, Alice, 28, 9.87
+3, George, 23, 11.3
+4, Timothy, 19, 7.6
+}
+
+Class (FirstName, Course) = {
+Billy, "Comp_Sci"
+Alice, "Science"
+Smith, "Biology"
+}
+
+Lecture (FirstName, Course) = {
+Billy, "Comp_Sci"
+Vader, "Force"
+John, "Plants"
+}
+
+Students_Age_and_Name = proj Name Age (Students)
+
+select Age>20(Students_Age_and_Name)
